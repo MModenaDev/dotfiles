@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+if [[ -z $STOW_FOLDERS ]]; then
+    STOW_FOLDERS="bin,i3,nvim,kitty,tmux,zsh"
+fi
+
+if [[ -z $DOTFILES ]]; then
+    DOTFILES=$HOME/dotfiles
+fi
+
+if [[ $# -eq 1 ]]; then
+    SCRIPT=$1
+else
+    SCRIPT=$(find . -maxdepth 1 -type f \( ! -iname "setup" \) | fzf)
+fi
+
+STOW_FOLDERS=$STOW_FOLDERS DOTFILES=$DOTFILES $DOTFILES/$SCRIPT
