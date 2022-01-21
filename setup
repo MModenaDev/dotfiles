@@ -10,7 +10,7 @@ fi
 if [[ $# -eq 1 ]]; then
     SCRIPT=$1
 else
-    SCRIPT=$(find . -maxdepth 1 -type f \( ! -iname "setup" \) | fzf)
+    SCRIPT=$(find . -maxdepth 1 -type f \( ! -iname "setup" -and ! -iname "README.md" \) | fzf)
 fi
 
 STOW_FOLDERS=$STOW_FOLDERS DOTFILES=$DOTFILES $DOTFILES/$SCRIPT
