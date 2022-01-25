@@ -12,3 +12,5 @@ keymap("n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<cr
 keymap("n", "<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<cr>", opts)
 
 keymap("n", "<leader>fo", ":Format<cr>", opts)
+keymap("n", "<leader>x", ":!chmod +x %<cr>", opts)
+keymap("n", "<leader>ts", ":silent !tmux neww tmux-sessionizer<cr>", opts)
