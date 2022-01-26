@@ -41,6 +41,7 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim"
   use "mattn/emmet-vim"
   use "goolord/alpha-nvim"
+  use "wakatime/vim-wakatime"
 
   -- Colorschemes
   use "Mofiqul/dracula.nvim"
