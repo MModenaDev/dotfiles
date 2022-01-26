@@ -39,6 +39,8 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons"
   use "nvim-lualine/lualine.nvim"
   use "numToStr/Comment.nvim"
+  use "mattn/emmet-vim"
+  use "goolord/alpha-nvim"
 
   -- Colorschemes
   use "Mofiqul/dracula.nvim"
