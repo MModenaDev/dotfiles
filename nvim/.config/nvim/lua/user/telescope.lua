@@ -83,3 +83,49 @@ telescope.setup {
 
 require("telescope").load_extension("fzy_native")
 require("telescope").load_extension("file_browser")
+require("telescope").load_extension("refactoring")
+require("telescope").load_extension("harpoon")
+
+local M = {}
+
+M.search_vim = function()
+    require("telescope.builtin").find_files({
+        prompt_title = "< VimRC >",
+        cwd = vim.env.DOTFILES,
+        hidden = true,
+    })
+end
+
+M.search_dotfiles = function()
+    require("telescope.builtin").find_files({
+        prompt_title = "< Dotfiles >",
+        cwd = "~/.dotfiles/",
+        hidden = true,
+        find_command = {'rg', '--files', '--hidden', '-g', '!.git' }
+    })
+end
+
+local function refactor(prompt_bufnr)
+    local content = require("telescope.actions.state").get_selected_entry(
+        prompt_bufnr
+    )
+    require("telescope.actions").close(prompt_bufnr)
+    require("refactoring").refactor(content.value)
+end
+
+M.refactors = function()
+    require("telescope.pickers").new({}, {
+        prompt_title = "refactors",
+        finder = require("telescope.finders").new_table({
+            results = require("refactoring").get_refactors(),
+        }),
+        sorter = require("telescope.config").values.generic_sorter({}),
+        attach_mappings = function(_, map)
+            map("i", "<CR>", refactor)
+            map("n", "<CR>", refactor)
+            return true
+        end,
+    }):find()
+end
+
+return M

@@ -42,6 +42,8 @@ return packer.startup(function(use)
   use "mattn/emmet-vim"
   use "goolord/alpha-nvim"
   use "wakatime/vim-wakatime"
+  use "ThePrimeagen/refactoring.nvim"
+  use "ThePrimeagen/harpoon"
 
   -- Colorschemes
   use "Mofiqul/dracula.nvim"

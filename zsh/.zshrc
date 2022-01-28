@@ -10,10 +10,14 @@ alias elsg="exa --icons --long --git --header"
 alias els2="exa --icons --tree --level=2"
 alias els3="exa --icons --tree --level=3"
 alias els4="exa --icons --tree --level=4"
+
 alias ta="tmux attach"
 alias tls="tmux list-sessions"
 alias tks="tmux kill-session"
+
 alias uu="sudo apt-get update | sudo apt-get upgrade"
+
+alias v="nvim"
 
 bindkey -s ^f "tmux-sessionizer\n"
 
