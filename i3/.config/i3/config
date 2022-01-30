@@ -187,6 +187,7 @@ assign [class="notion-snap" instance="notion-snap"] $notion
 assign [class="discord" instance="discord"] $chat
 assign [class="zoom" instance="zoom"] $chat
 assign [class="Slack" instance="slack"] $chat
+assign [class="krita" instance="krita"] $others
 #assign [class="" instance=""] -> $
 
 # theme (Dracula)

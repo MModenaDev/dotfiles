@@ -15,13 +15,11 @@ alias ta="tmux attach"
 alias tls="tmux list-sessions"
 alias tks="tmux kill-session"
 
-alias uu="sudo apt-get update | sudo apt-get upgrade"
+alias uu="sudo apt-get update; sudo apt-get upgrade"
 
 alias v="nvim"
 
 bindkey -s ^f "tmux-sessionizer\n"
-
-export PAGER="most"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_profile
