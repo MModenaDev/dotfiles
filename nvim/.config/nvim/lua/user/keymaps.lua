@@ -26,6 +26,7 @@ keymap("n", "<leader>fd", "<cmd>:lua require('user.telescope').search_dotfiles()
 keymap("n", "<leader>fr", "<cmd>:lua require('user.telescope').refactors()<cr>", opts)
 keymap("n", "<leader>fg", "<cmd>:lua require('telescope.builtin').live_grep()<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>:Telescope file_browser<cr>", opts)
+keymap("n", "<leader>fn", "<cmd>:Telescope notify<cr>", opts)
 
 keymap("n", "<leader>df", "<cmd>:lua require('refactoring').debug.printf({below = false})<cr>", opts)
 keymap("n", "<leader>df", "<cmd>:lua require('refactoring').debug.printf({below = true})<cr>", opts)

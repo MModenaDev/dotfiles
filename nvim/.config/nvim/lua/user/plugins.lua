@@ -44,6 +44,7 @@ return packer.startup(function(use)
   use "wakatime/vim-wakatime"
   use "ThePrimeagen/refactoring.nvim"
   use "ThePrimeagen/harpoon"
+  use "rcarriga/nvim-notify"
 
   -- Colorschemes
   use "Mofiqul/dracula.nvim"
