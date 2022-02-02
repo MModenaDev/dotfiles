@@ -146,7 +146,8 @@ set $notion "4:  notion"
 set $music "5:  music"
 set $design "6:  design"
 set $pswd "7: pswd"
-set $others "8: others"
+set $zoom "8: zoom"
+set $others "9: zoom"
 
 # switch to workspace
 bindsym $mod+1 workspace $terms
@@ -156,8 +157,8 @@ bindsym $mod+4 workspace $notion
 bindsym $mod+5 workspace $music
 bindsym $mod+6 workspace $design
 bindsym $mod+7 workspace $pswd
-bindsym $mod+8 workspace $others
-bindsym $mod+9 workspace 9
+bindsym $mod+8 workspace $zoom
+bindsym $mod+9 workspace $others
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
@@ -168,8 +169,8 @@ bindsym $mod+Shift+4 move container to workspace $notion
 bindsym $mod+Shift+5 move container to workspace $music
 bindsym $mod+Shift+6 move container to workspace $design
 bindsym $mod+Shift+7 move container to workspace $pswd
-bindsym $mod+Shift+8 move container to workspace $others
-bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+8 move container to workspace $zoom
+bindsym $mod+Shift+9 move container to workspace $others
 bindsym $mod+Shift+0 move container to workspace 10
 
 # start a terminal
@@ -185,7 +186,7 @@ assign [class="Spotify" instance="spotify"] $music
 assign [class="1Password" instance="1password"] $pswd
 assign [class="notion-snap" instance="notion-snap"] $notion
 assign [class="discord" instance="discord"] $chat
-assign [class="zoom" instance="zoom"] $chat
+assign [class="zoom" instance="zoom"] $zoom
 assign [class="Slack" instance="slack"] $chat
 assign [class="krita" instance="krita"] $others
 #assign [class="" instance=""] -> $
