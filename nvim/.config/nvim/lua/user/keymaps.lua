@@ -24,6 +24,8 @@ keymap("n", "<leader>fa", "<cmd>:lua require('telescope.builtin').find_files({ f
 keymap("n", "<leader>fv", "<cmd>:lua require('user.telescope').search_vim()<cr>", opts)
 keymap("n", "<leader>fd", "<cmd>:lua require('user.telescope').search_dotfiles()<cr>", opts)
 keymap("n", "<leader>fr", "<cmd>:lua require('user.telescope').refactors()<cr>", opts)
+keymap("n", "<leader>fw", "<cmd>:lua require('telescope').extensions.git_worktree.git_worktrees()<cr>", opts)
+keymap("n", "<leader>fr", "<cmd>:lua require('user.telescope').refactors()<cr>", opts)
 keymap("n", "<leader>fg", "<cmd>:lua require('telescope.builtin').live_grep()<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>:Telescope file_browser<cr>", opts)
 keymap("n", "<leader>fn", "<cmd>:Telescope notify<cr>", opts)

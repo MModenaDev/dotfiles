@@ -1,8 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="spaceship"
-
 plugins=(git z fzf zsh-autosuggestions)
 
 alias els="exa --icons -la"
@@ -23,3 +21,5 @@ bindkey -s ^f "tmux-sessionizer\n"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_profile
+
+eval "$(starship init zsh)"
