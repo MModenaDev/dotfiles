@@ -1,0 +1,25 @@
+add_newline = true
+
+format = """$character"""
+right_format = """$all"""
+
+[memory_usage]
+format = "$symbol[${ram}( | ${swap})]($style) "
+threshold = 70
+style = "bold dimmed white"
+disabled = false
+
+[directory]
+truncation_length = 5
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
+
+[[battery.display]]
+threshold = 30
+style = "bold red"
+
+[aws]
+disabled = true
