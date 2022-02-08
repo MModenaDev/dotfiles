@@ -147,7 +147,7 @@ set $music "5:  music"
 set $design "6:  design"
 set $pswd "7: pswd"
 set $zoom "8: zoom"
-set $others "9: zoom"
+set $others "9: others"
 
 # switch to workspace
 bindsym $mod+1 workspace $terms
