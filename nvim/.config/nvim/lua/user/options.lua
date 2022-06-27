@@ -32,3 +32,4 @@ end
 
 vim.cmd [[set path+=**]]
 vim.cmd [[set wildignore+=*/node_modules/*]]
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
