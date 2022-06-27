@@ -176,6 +176,9 @@ bindsym $mod+Shift+0 move container to workspace 10
 # start a terminal
 bindsym $mod+Return exec kitty tmux new-session -s root
 
+# print screen
+bindsym $mod+p exec gnome-screenshot -i
+
 # remove border
 for_window [class="^.*"] border none
 
@@ -187,7 +190,7 @@ assign [class="1Password" instance="1password"] $pswd
 assign [class="notion-snap" instance="notion-snap"] $notion
 assign [class="discord" instance="discord"] $chat
 assign [class="zoom" instance="zoom"] $zoom
-assign [class="Slack" instance="slack"] $chat
+assign [class="Microsoft Teams - Preview" instance="microsoft teams - preview"] $chat
 assign [class="krita" instance="krita"] $others
 #assign [class="" instance=""] -> $
 

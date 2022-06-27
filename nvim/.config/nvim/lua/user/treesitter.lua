@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 configs.setup {
-  ensure_installed = "maintained",
+  ensure_installed = { "bash", "c", "comment", "css", "dockerfile", "graphql", "html", "javascript", "jsdoc", "json", "regex", "scss", "typescript", "tsx", "vim", "yaml" },
   sync_install = false,
   ignore_install = { "" },
   autopairs = {
