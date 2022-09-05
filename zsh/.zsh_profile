@@ -1,2 +1,18 @@
+export XDG_CONFIG_HOME=$HOME/.config
+
 VIM="nvim"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+PERSONAL=$XDG_CONFIG_HOME/personal
+source $PERSONAL/env
+for i in `find -L $PERSONAL`; do
+    source $i
+done
+
+export DOTFILES=$HOME/.dotfiles
+export GIT_EDITOR=$VIM
+export NVM_DIR=~/.nvm
+
+addToPathFront $HOME/.local/bin/
+
+bindkey -s ^f "tmux-sessionizer\n"
+

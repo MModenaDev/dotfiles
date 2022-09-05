@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh
+
+alias vim="$VIM"
+alias v="$VIM"
+
+alias els="exa --icons -la"
+alias elsg="exa --icons --long --git --header"
+alias els2="exa --icons --tree --level=2"
+alias els3="exa --icons --tree --level=3"
+alias els4="exa --icons --tree --level=4"
+
+alias ta="tmux attach"
+alias tls="tmux list-sessions"
+alias tks="tmux kill-session"
+

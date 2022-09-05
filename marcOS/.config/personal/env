@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh
+
+STOW_FOLDERS="marcOS,bin,i3,nvim,kitty,starship,tmux,zsh"
+
+addToPath() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$PATH:$1
+    fi
+}
+
+addToPathFront() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$1:$PATH
+    fi
+}
